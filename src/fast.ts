@@ -30,7 +30,7 @@ class FastNode {
         return this;
     }
 
-    text(inner: string) {
+    text(inner: string | null | undefined) {
         if(inner) {
             this.each((element: HTMLElement) => element.innerHTML = inner)
             return this;
